@@ -45,11 +45,11 @@ export default function Home() {
           </div>
           <div className="text-center">
             <p className="text-sm text-gray-500">Kaltmiete</p>
-            <p className="text-2xl font-bold">950 €</p>
+            <p className="text-2xl font-bold">850 €</p>
           </div>
           <div className="text-center">
             <p className="text-sm text-gray-500">Nebenkosten</p>
-            <p className="text-2xl font-bold">300 €</p>
+            <p className="text-2xl font-bold">250 €</p>
           </div>
         </div>
       </section>
@@ -60,9 +60,9 @@ export default function Home() {
         </h2>
 
         <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
-          Diese moderne 2‑Zimmer‑Wohnung liegt in einer angenehm ruhigen 
-		  Wohngegend und überzeugt durch einen hellen, großzügigen 
-		  Wohnbereich mit viel Tageslicht.
+          Diese moderne 2‑Zimmer‑Wohnung liegt in einer angenehm, ruhigen Wohngegend 
+		  in fußläufiger Nähe zum Klinikum Lüdenschedi Hellersen und
+		  überzeugt durch einen hellen, modernen Wohnbereich mit viel Tageslicht.
 		  
 		  Die Wohnung ist mit einer hochwertigen Einbauküche ausgestattet
 		  und verfügt über ein modernes Duschbad im nordischen Stil.
