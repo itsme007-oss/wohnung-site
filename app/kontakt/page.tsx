@@ -6,7 +6,7 @@ export default function Home() {
       <section className="relative h-screen flex items-center justify-center text-center">
 
         <img
-		  src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80"
+		  src="/Kontakt_kopf.jpg"
 		  alt="Wohnung"
 		  className="absolute w-full h-full object-cover"
 		/>
