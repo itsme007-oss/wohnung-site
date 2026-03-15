@@ -76,7 +76,7 @@ const items: GalleryItem[] = [
   },
 
   {
-    src: "/wohnung/2_Flur_1.jpg",
+    src: "/wohnung/2_Flur_1_.jpg",
     alt: "Flur",
     room: "Flur",
     title: "Flur",
