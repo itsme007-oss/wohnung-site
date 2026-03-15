@@ -282,12 +282,12 @@ const items: GalleryItem[] = [
     title: "Küche 13",
   },
   {
-    src: "/wohnung/10_kueche_vid.mp4",
-    alt: "Küchenvideo",
-    room: "Küche",
-    title: "Küchenvideo",
+    src: "/wohnung/Rundgang_OG.mp4",
+    alt: "Rundgang_OG",
+    room: "Eingang",
+    title: "Rundgang OG",
     type: "video",
-    poster: "/wohnung/10_kueche_1.jpg",
+    poster: "/wohnung/grundriss.jpg.jpg",
   },
 
   {
