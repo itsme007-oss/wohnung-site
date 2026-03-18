@@ -287,15 +287,28 @@ const items: GalleryItem[] = [
     room: "Eingang",
     title: "Rundgang OG",
     type: "video",
-    poster: "/wohnung/grundriss.jpg.jpg",
+    poster: "/wohnung/Grundriss_OG.png",
   },
 
   {
-    src: "/wohnung/grundriss.jpg",
-    alt: "Grundriss",
+    src: "/wohnung/Grundriss_OG.png",
+    alt: "Grundriss OG",
     room: "Grundriss",
-    title: "Grundriss",
+    title: "Grundriss OG",
   },
+  
+   {
+    src: "/wohnung/Grundriss_DG.png",
+    alt: "Grundriss DG",
+    room: "Grundriss",
+    title: "Grundriss DG",
+  }, 
+ 
+  
+  
+  
+  
+  
 ];
 
 const categories = [
