@@ -13,7 +13,7 @@ const features = [
   "2 Zimmer plus 2 zusätzliche DG-Zimmer",
   "Tageslichtbad",
   "Großzügiger, lichtdurchfluteter Schnitt",
-  "Alle Zimmer vom Flur aus begehbar",
+  "kleiner Flur",
   "Gepflegtes Mehrfamilienhaus",
   "Gehobene Qualität / modernisiert",
 ];
@@ -21,7 +21,7 @@ const features = [
 const locationPoints = [
   "Fußläufig in ca. 5 Minuten zum Klinikum Hellersen",
   "Ruhige Wohnlage mit Nähe zum Waldgebiet",
-  "Ideal für Mitarbeiterinnen und Mitarbeiter des Klinikums",
+  "Ideal für Klinikpersonal",
   "Naturnahe Umgebung mit gleichzeitig guter Erreichbarkeit",
 ];
 
@@ -199,7 +199,7 @@ export default function DatenPage() {
           <SectionCard title="Objektbeschreibung">
             <div className="space-y-6 text-lg leading-8 text-gray-700">
               <p>
-                Die Wohnung befindet sich im Dachgeschoss eines gepflegten
+                Die Wohnung befindet sich im Obergeschoss eines gepflegten
                 Mehrfamilienhauses und überzeugt durch einen großzügigen,
                 lichtdurchfluteten Grundriss. Der Wohnbereich wirkt offen und
                 freundlich, während der Balkon einen schönen Ausblick ins Grüne
@@ -236,16 +236,55 @@ export default function DatenPage() {
 
             <div className="rounded-3xl overflow-hidden shadow-sm border border-gray-200 bg-white">
               <img
-                src="/wohnung/grundriss.jpg"
-                alt="Grundriss"
-                className="w-full h-56 object-cover bg-white"
+                src="/wohnung/0_balkon2_markiese.jpg"
+                alt="Balkon"
+                className="w-full h-56 object-cover"
               />
               <div className="p-5">
-                <div className="text-sm text-gray-500 mb-1">Übersicht</div>
-                <div className="text-xl font-semibold">Grundriss der Wohnung</div>
+                <div className="text-sm text-gray-500 mb-1">Wohnqualität</div>
+                <div className="text-xl font-semibold">Ruhiger Balkonbereich</div>
               </div>
             </div>
           </div>
+        </div>
+
+        <div className="mb-8">
+          <SectionCard title="Grundrisse">
+            <p className="text-lg text-gray-600 leading-8 mb-8">
+              Hier findest du beide Grundrisse der Wohnung getrennt nach
+              Obergeschoss und Dachgeschoss.
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="rounded-3xl overflow-hidden border border-gray-200 bg-white shadow-sm">
+                <div className="bg-gray-50 border-b border-gray-200 px-5 py-4">
+                  <div className="text-sm text-gray-500 mb-1">Grundriss</div>
+                  <div className="text-xl font-semibold">Obergeschoss</div>
+                </div>
+                <div className="p-5">
+                  <img
+                    src="/wohnung/Grundriss_OG.png"
+                    alt="Grundriss Obergeschoss"
+                    className="w-full h-auto object-contain bg-white rounded-2xl"
+                  />
+                </div>
+              </div>
+
+              <div className="rounded-3xl overflow-hidden border border-gray-200 bg-white shadow-sm">
+                <div className="bg-gray-50 border-b border-gray-200 px-5 py-4">
+                  <div className="text-sm text-gray-500 mb-1">Grundriss</div>
+                  <div className="text-xl font-semibold">Dachgeschoss</div>
+                </div>
+                <div className="p-5">
+                  <img
+                    src="/wohnung/Grundriss_DG.png"
+                    alt="Grundriss Dachgeschoss"
+                    className="w-full h-auto object-contain bg-white rounded-2xl"
+                  />
+                </div>
+              </div>
+            </div>
+          </SectionCard>
         </div>
 
         <div className="grid xl:grid-cols-[0.95fr_1.05fr] gap-8">
@@ -261,10 +300,10 @@ export default function DatenPage() {
               </p>
 
               <p>
-                Damit eignet sich die Wohnung besonders gut für
-                Klinikpersonal, das kurze Wege schätzt und gleichzeitig ruhig
-                wohnen möchte. Auch die unmittelbare Nähe zum angrenzenden
-                Waldgebiet spricht für eine hohe Wohnqualität.
+                Damit eignet sich die Wohnung besonders gut für Klinikpersonal,
+                das kurze Wege schätzt und gleichzeitig ruhig wohnen möchte.
+                Auch die unmittelbare Nähe zum angrenzenden Waldgebiet spricht
+                für eine hohe Wohnqualität.
               </p>
 
               <p>

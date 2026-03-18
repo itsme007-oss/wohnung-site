@@ -1,104 +1,63 @@
-export default function Home() {
+"use client";
+
+export default function KontaktPage() {
   return (
-    <main className="min-h-screen bg-white text-gray-900">
-
-      {/* HERO */}
-      <section className="relative h-screen flex items-center justify-center text-center">
-
-        <img
-		  src="/Kontakt_kopf.jpg"
-		  alt="Wohnung"
-		  className="absolute w-full h-full object-cover"
-		/>
-
-        <div className="absolute inset-0 bg-black/50"></div>
-
-        <div className="relative z-10 text-white px-6">
-          <h1 className="text-5xl font-bold mb-6">
-            Moderne 2-Zimmer-Wohnung
-          </h1>
-
-          <p className="text-xl mb-8">
-            75 m² · Balkon · Einbauküche · ruhige Lage
+    <main className="min-h-screen bg-gray-50 text-gray-900 px-6 py-16">
+      <div className="max-w-5xl mx-auto">
+        <div className="text-center mb-12">
+          <h1 className="text-4xl font-bold mb-4">Kontakt</h1>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            Bei Interesse an der Wohnung oder bei Fragen zu Besichtigung,
+            Mietkonditionen und Ausstattung freue ich mich über deine
+            Kontaktaufnahme.
           </p>
-
-          <button className="bg-white text-black px-6 py-3 rounded-full">
-            ab sofort beziehbar
-          </button>
         </div>
 
-      </section>
-
-      
-	  
-          {/* KONTAKT */}
-      {/* KONTAKT */}
-      <section className="bg-gray-100 py-20 px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6">
-            Besichtigung anfragen
-          </h2>
-
-          <p className="text-lg text-gray-600 mb-10">
-            Wenn Sie Interesse an der Wohnung haben, senden Sie gerne eine Anfrage.
-          </p>
-
-          <form
-		  
-			  action="https://formspree.io/f/xjgagvvb"
-			  method="POST"
-			  className="bg-white rounded-2xl shadow-lg p-8 text-left space-y-6"
-			>
-			  <input type="hidden" name="_subject" value="Neue Wohnungsanfrage" />
-            <div>
-              <label className="block text-sm font-medium mb-2">Name</label>
-              <input
-                type="text"
-                name="name"
-                className="w-full border border-gray-300 rounded-xl px-4 py-3"
-                placeholder="Ihr Name"
-              />
+        <div className="grid md:grid-cols-2 gap-8">
+          <section className="bg-white rounded-3xl border border-gray-200 shadow-sm p-8">
+            <div className="text-sm text-gray-500 mb-2">Telefon</div>
+            <div className="text-3xl font-bold mb-4">
+              ☎ 02351 / 87 99 814
             </div>
+            <p className="text-gray-600 leading-7">
+              Gerne telefonisch melden, um weitere Informationen zu erhalten
+              oder einen Besichtigungstermin abzustimmen.
+            </p>
+          </section>
 
-            <div>
-              <label className="block text-sm font-medium mb-2">Telefon</label>
-              <input
-                type="tel"
-                name="telefon"
-                className="w-full border border-gray-300 rounded-xl px-4 py-3"
-                placeholder="+49 ..."
-              />
+          <section className="bg-white rounded-3xl border border-gray-200 shadow-sm p-8">
+            <div className="text-sm text-gray-500 mb-2">Hinweis</div>
+            <div className="text-2xl font-semibold mb-4">
+              Ideal für Klinikpersonal
             </div>
-
-            <div>
-              <label className="block text-sm font-medium mb-2">E-Mail</label>
-              <input
-                type="email"
-                name="email"
-                className="w-full border border-gray-300 rounded-xl px-4 py-3"
-                placeholder="ihre@email.de"
-              />
-            </div>
-
-            <div>
-              <label className="block text-sm font-medium mb-2">Nachricht</label>
-              <textarea
-                name="nachricht"
-                rows={5}
-                className="w-full border border-gray-300 rounded-xl px-4 py-3"
-                placeholder="Ich interessiere mich für die Wohnung und würde gerne einen Besichtigungstermin vereinbaren."
-              />
-            </div>
-
-            <button
-              type="submit"
-              className="bg-black text-white px-6 py-3 rounded-full"
-            >
-              Anfrage senden
-            </button>
-          </form>
+            <p className="text-gray-600 leading-7">
+              Durch die fußläufige Nähe von etwa 5 Minuten zum Klinikum
+              Hellersen eignet sich die Wohnung besonders für Mitarbeiterinnen
+              und Mitarbeiter des Klinikums.
+            </p>
+          </section>
         </div>
-      </section>
+
+        <div className="mt-8 bg-white rounded-3xl border border-gray-200 shadow-sm overflow-hidden">
+          <img
+            src="/wohnung/0_balkon1_blick-tal.jpg"
+            alt="Balkonblick"
+            className="w-full h-72 object-cover"
+          />
+          <div className="p-8">
+            <div className="text-sm text-gray-500 mb-2">Wohnlage</div>
+            <div className="text-2xl font-semibold mb-4">
+              Ruhig wohnen mit Blick ins Grüne
+            </div>
+            <p className="text-gray-600 leading-8">
+              Die Wohnung verbindet eine ruhige Lage mit Waldnähe und sehr
+              kurzen Wegen zum Klinikum Hellersen. Damit ist sie ideal für alle,
+              die entspannt wohnen und trotzdem schnell am Arbeitsort sein
+              möchten.
+            </p>
+          </div>
+        </div>
+      </div>
     </main>
   );
 }
