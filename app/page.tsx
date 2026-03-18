@@ -49,7 +49,7 @@ export default function Home() {
           </div>
           <div className="text-center">
             <p className="text-sm text-gray-500">Nebenkosten</p>
-            <p className="text-2xl font-bold">250 €</p>
+            <p className="text-2xl font-bold">280 €</p>
           </div>
         </div>
       </section>
