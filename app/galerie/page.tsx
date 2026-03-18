@@ -282,7 +282,7 @@ const items: GalleryItem[] = [
     title: "Küche 13",
   },
   {
-    src: "/wohnung/Rundgang_OG.wmv",
+    src: "/wohnung/Rundgang_OG_.mp4",
     alt: "Rundgang_OG",
     room: "Eingang",
     title: "Rundgang OG",
