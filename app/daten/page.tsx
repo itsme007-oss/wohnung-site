@@ -151,7 +151,7 @@ export default function DatenPage() {
             <InfoRow label="Zimmer" value="2 (+ 2 DG Zimmer)" strong />
             <InfoRow label="Schlafzimmer" value="1" />
             <InfoRow label="Badezimmer" value="1" />
-            <InfoRow label="Wohnfläche ca." value="60 qm" strong />
+            <InfoRow label="Wohnfläche ca." value="75 qm" strong />
             <InfoRow label="Nutzfläche ca." value="75 qm" strong />
             <InfoRow label="Bezugsfrei ab" value="14.2026" />
             <InfoRow label="Haustiere" value="Nach Vereinbarung" />
