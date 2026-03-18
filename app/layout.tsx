@@ -15,18 +15,19 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Wohnung Exposé",
-  description: "Moderne 2-Zimmer-Wohnung mit Balkon",
+  description:
+    "Moderne Wohnung mit Balkon, Einbauküche, 360° Rundgang, Galerie und ausführlichen Wohnungsdaten.",
 };
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
     <html lang="de">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white text-gray-900`}
       >
         <Navbar />
         {children}
