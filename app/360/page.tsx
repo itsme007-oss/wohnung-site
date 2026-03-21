@@ -48,18 +48,6 @@ type RoomGroup = {
 
 const roomGroups: RoomGroup[] = [
   {
-    id: "eingang",
-    label: "Eingang",
-    firstScene: "eingang_1",
-    scenes: [
-      {
-        id: "eingang_1",
-        label: "Eingang",
-        preview: "/360/eingang_1.jpg",
-      },
-    ],
-  },
-  {
     id: "flur",
     label: "Flur",
     firstScene: "flur_1",
@@ -232,11 +220,6 @@ const roomGroups: RoomGroup[] = [
 ];
 
 const scenes: Record<string, SceneConfig> = {
-  eingang_1: {
-    title: "Eingang",
-    type: "equirectangular",
-    panorama: "/360/eingang_1.jpg",
-  },
   flur_1: {
     title: "Flur",
     type: "equirectangular",
