@@ -200,7 +200,7 @@ export default function DatenPage() {
             <div className="space-y-6 text-lg leading-8 text-gray-700">
               <p>
                 Die Wohnung befindet sich im Obergeschoss eines gepflegten
-                Mehrfamilienhauses und überzeugt durch einen großzügigen,
+                Zweifamilienhauses und überzeugt durch einen großzügigen,
                 lichtdurchfluteten Grundriss. Der Wohnbereich wirkt offen und
                 freundlich, während der Balkon einen schönen Ausblick ins Grüne
                 bietet.
