@@ -1,6 +1,61 @@
 "use client";
 
+import { FormEvent, useState } from "react";
+
 export default function KontaktPage() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [status, setStatus] = useState<{
+    type: "success" | "error" | null;
+    message: string;
+  }>({
+    type: null,
+    message: "",
+  });
+
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    setIsSubmitting(true);
+    setStatus({ type: null, message: "" });
+
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch("https://formspree.io/f/mreyvabv", {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        setStatus({
+          type: "success",
+          message: "Vielen Dank. Deine Nachricht wurde erfolgreich gesendet.",
+        });
+        form.reset();
+      } else {
+        setStatus({
+          type: "error",
+          message:
+            result?.errors?.[0]?.message ||
+            "Die Nachricht konnte leider nicht gesendet werden.",
+        });
+      }
+    } catch {
+      setStatus({
+        type: "error",
+        message:
+          "Beim Senden ist ein Fehler aufgetreten. Bitte versuche es später erneut.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  }
+
   return (
     <main className="min-h-screen bg-gray-50 text-gray-900 px-6 py-16">
       <div className="max-w-6xl mx-auto">
@@ -27,7 +82,9 @@ export default function KontaktPage() {
             </section>
 
             <section className="bg-white rounded-3xl border border-gray-200 shadow-sm p-8">
-              <div className="text-sm text-gray-500 mb-2">Besonderer Vorteil</div>
+              <div className="text-sm text-gray-500 mb-2">
+                Besonderer Vorteil
+              </div>
               <div className="text-2xl font-semibold mb-4">
                 Ideal für Klinikpersonal
               </div>
@@ -62,7 +119,10 @@ export default function KontaktPage() {
           <section className="bg-white rounded-3xl border border-gray-200 shadow-sm p-8">
             <h2 className="text-2xl font-bold mb-6">Nachricht senden</h2>
 
-            <form className="space-y-5">
+            <form className="space-y-5" onSubmit={handleSubmit}>
+              <input type="hidden" name="_subject" value="Neue Anfrage zur Wohnung" />
+              <input type="hidden" name="_language" value="de" />
+
               <div>
                 <label
                   htmlFor="name"
@@ -74,6 +134,7 @@ export default function KontaktPage() {
                   id="name"
                   name="name"
                   type="text"
+                  required
                   placeholder="Dein Name"
                   className="w-full rounded-2xl border border-gray-300 px-4 py-3 outline-none focus:border-black"
                 />
@@ -90,6 +151,7 @@ export default function KontaktPage() {
                   id="email"
                   name="email"
                   type="email"
+                  required
                   placeholder="deine@email.de"
                   className="w-full rounded-2xl border border-gray-300 px-4 py-3 outline-none focus:border-black"
                 />
@@ -122,6 +184,7 @@ export default function KontaktPage() {
                   id="nachricht"
                   name="nachricht"
                   rows={7}
+                  required
                   placeholder="Ich interessiere mich für die Wohnung und hätte gerne weitere Informationen."
                   className="w-full rounded-2xl border border-gray-300 px-4 py-3 outline-none focus:border-black resize-none"
                 />
@@ -129,17 +192,24 @@ export default function KontaktPage() {
 
               <button
                 type="submit"
-                className="inline-flex items-center justify-center rounded-full bg-black text-white px-6 py-3 font-medium hover:bg-gray-800 transition"
+                disabled={isSubmitting}
+                className="inline-flex items-center justify-center rounded-full bg-black text-white px-6 py-3 font-medium hover:bg-gray-800 transition disabled:opacity-60"
               >
-                Nachricht senden
+                {isSubmitting ? "Wird gesendet..." : "Nachricht senden"}
               </button>
             </form>
 
-            <p className="text-sm text-gray-500 mt-5 leading-6">
-              Das Formular ist aktuell als Layout vorbereitet. Falls du möchtest,
-              kann ich dir im nächsten Schritt auch noch die echte
-              Formularfunktion per E-Mail-Versand einbauen.
-            </p>
+            {status.type && (
+              <div
+                className={`mt-5 rounded-2xl px-4 py-3 text-sm ${
+                  status.type === "success"
+                    ? "bg-green-50 text-green-700 border border-green-200"
+                    : "bg-red-50 text-red-700 border border-red-200"
+                }`}
+              >
+                {status.message}
+              </div>
+            )}
           </section>
         </div>
       </div>
