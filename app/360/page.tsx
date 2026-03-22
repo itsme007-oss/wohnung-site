@@ -55,7 +55,7 @@ const roomGroups: RoomGroup[] = [
       {
         id: "flur_1",
         label: "Flur",
-        preview: "/360/flur_1.jpg",
+        preview: "/360/0_flur.jpg",
       },
     ],
   },
@@ -67,7 +67,7 @@ const roomGroups: RoomGroup[] = [
       {
         id: "wohnzimmer_1",
         label: "Wohnzimmer",
-        preview: "/360/wohnzimmer_1.jpg",
+        preview: "/360/0_wz.jpg",
       },
     ],
   },
@@ -78,13 +78,13 @@ const roomGroups: RoomGroup[] = [
     scenes: [
       {
         id: "kueche_1",
-        label: "Küche 1",
-        preview: "/360/kueche_1.jpg",
+        label: "Küche - Ansicht 1",
+        preview: "/360/0_k.jpg",
       },
       {
         id: "kueche_2",
-        label: "Küche 2",
-        preview: "/360/kueche_2.jpg",
+        label: "Küche - Ansicht 2",
+        preview: "/360/0_k1a.jpg",
       },
     ],
   },
@@ -96,7 +96,7 @@ const roomGroups: RoomGroup[] = [
       {
         id: "sz_1",
         label: "Schlafzimmer",
-        preview: "/360/sz_1.jpg",
+        preview: "/360/0_sz.jpg",
       },
     ],
   },
@@ -108,7 +108,7 @@ const roomGroups: RoomGroup[] = [
       {
         id: "dusche_1",
         label: "Bad",
-        preview: "/360/dusche_1.jpg",
+        preview: "/360/0_bad.jpg",
       },
     ],
   },
@@ -119,13 +119,13 @@ const roomGroups: RoomGroup[] = [
     scenes: [
       {
         id: "balkon_1",
-        label: "Balkon 1",
+        label: "Balkon - Nacht",
         preview: "/360/balkon_1.jpg",
       },
       {
         id: "balkon_2",
-        label: "Balkon 2",
-        preview: "/360/balkon_2.jpg",
+        label: "Balkon - Tag",
+        preview: "/360/0_balkon.jpg",
       },
     ],
   },
@@ -137,7 +137,7 @@ const roomGroups: RoomGroup[] = [
       {
         id: "dg_treppe",
         label: "DG Treppe",
-        preview: "/360/dg_treppe.jpg",
+        preview: "/360/0_dg_treppe.jpg",
       },
     ],
   },
@@ -149,7 +149,7 @@ const roomGroups: RoomGroup[] = [
       {
         id: "dg_flur",
         label: "DG Flur",
-        preview: "/360/dg_flur.jpg",
+        preview: "/360/0_dg_flur.jpg",
       },
     ],
   },
@@ -160,13 +160,13 @@ const roomGroups: RoomGroup[] = [
     scenes: [
       {
         id: "dg_room1",
-        label: "DG Zimmer 1",
-        preview: "/360/dg_room1.jpg",
+        label: "DG Zimmer - Ansicht 1",
+        preview: "/360/0_dg_z1.jpg",
       },
       {
         id: "dg_room1_a",
-        label: "DG Zimmer 1A",
-        preview: "/360/dg_room1_a.jpg",
+        label: "DG Zimmer - Ansicht 2",
+        preview: "/360/0_dg_z1a.jpg",
       },
     ],
   },
@@ -177,13 +177,13 @@ const roomGroups: RoomGroup[] = [
     scenes: [
       {
         id: "dg_room2",
-        label: "DG Zimmer 2",
-        preview: "/360/dg_room2.jpg",
+        label: "DG Zimmer 2 - Ansicht 1",
+        preview: "/360/0_dg_z2.jpg",
       },
       {
         id: "dg_room2_a",
-        label: "DG Zimmer 2A",
-        preview: "/360/dg_room2_a.jpg",
+        label: "DG Zimmer 2 - Ansicht 2",
+        preview: "/360/0_dg_z2a.jpg",
       },
     ],
   },
@@ -201,12 +201,12 @@ const scenes: Record<string, SceneConfig> = {
     panorama: "/360/wohnzimmer_1.jpg",
   },
   kueche_1: {
-    title: "Küche 1",
+    title: "Küche - Ansicht 1",
     type: "equirectangular",
     panorama: "/360/kueche_1.jpg",
   },
   kueche_2: {
-    title: "Küche 2",
+    title: "Küche - Ansicht 2",
     type: "equirectangular",
     panorama: "/360/kueche_2.jpg",
   },
@@ -221,12 +221,12 @@ const scenes: Record<string, SceneConfig> = {
     panorama: "/360/dusche_1.jpg",
   },
   balkon_1: {
-    title: "Balkon 1",
+    title: "Balkon - Nacht",
     type: "equirectangular",
     panorama: "/360/balkon_1.jpg",
   },
   balkon_2: {
-    title: "Balkon 2",
+    title: "Balkon - Tag",
     type: "equirectangular",
     panorama: "/360/balkon_2.jpg",
   },
@@ -241,22 +241,22 @@ const scenes: Record<string, SceneConfig> = {
     panorama: "/360/dg_flur.jpg",
   },
   dg_room1: {
-    title: "DG Zimmer 1",
+    title: "DG Zimmer 1 - Ansicht 1",
     type: "equirectangular",
     panorama: "/360/dg_room1.jpg",
   },
   dg_room1_a: {
-    title: "DG Zimmer 1A",
+    title: "DG Zimmer 1 - Ansicht 2",
     type: "equirectangular",
     panorama: "/360/dg_room1_a.jpg",
   },
   dg_room2: {
-    title: "DG Zimmer 2",
+    title: "DG Zimmer 2 - Ansicht 1",
     type: "equirectangular",
     panorama: "/360/dg_room2.jpg",
   },
   dg_room2_a: {
-    title: "DG Zimmer 2A",
+    title: "DG Zimmer - Ansicht 2",
     type: "equirectangular",
     panorama: "/360/dg_room2_a.jpg",
   },
