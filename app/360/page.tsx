@@ -195,7 +195,7 @@ const roomGroups: RoomGroup[] = [
       {
         id: "dg_wc",
         label: "DG WC",
-        preview: "/360/dg_wc.jpg",
+        preview: "/360/0_dg_wc.jpg",
       },
     ],
   },
