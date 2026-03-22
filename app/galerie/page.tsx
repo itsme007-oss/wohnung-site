@@ -265,7 +265,7 @@ const items: GalleryItem[] = [
   },
 
   {
-    src: "/wohnung/Rundgang_OG.mp4",
+    src: "/wohnung/Rundgang_OG_.mp4",
     alt: "Rundgang Obergeschoss",
     room: "Video",
     title: "Video Rundgang",
