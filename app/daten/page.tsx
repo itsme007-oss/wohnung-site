@@ -152,8 +152,8 @@ export default function DatenPage() {
             <InfoRow label="Zimmer" value="2 (+ 2 DG Zimmer)" strong />
             <InfoRow label="Schlafzimmer" value="1" />
             <InfoRow label="Badezimmer" value="1" />
-            <InfoRow label="Wohnfläche ca." value="75 qm" strong />
-            <InfoRow label="Nutzfläche ca." value="75 qm" strong />
+            <InfoRow label="Wohnfläche ca." value="71,5 qm" strong />
+            <InfoRow label="Nutzfläche ca." value="71,5 qm" strong />
             <InfoRow label="Bezugsfrei ab" value="ab sofort" />
             <InfoRow label="Mietdauer" value="befristet für ca. 2 Jahre" strong />
             <InfoRow label="Haustiere" value="Nach Vereinbarung" />

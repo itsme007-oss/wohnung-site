@@ -22,7 +22,7 @@ export default function Home() {
           </h1>
 
           <p className="text-xl mb-8">
-            75 m² · Balkon · Einbauküche · ruhige Lage
+            ca. 72 m² · Balkon · Einbauküche · ruhige Lage
           </p>
 
           <button className="bg-white text-black px-6 py-3 rounded-full">
@@ -37,7 +37,7 @@ export default function Home() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 bg-white rounded-3xl shadow-xl p-6">
           <div className="text-center">
             <p className="text-sm text-gray-500">Wohnfläche</p>
-            <p className="text-2xl font-bold">75 m²</p>
+            <p className="text-2xl font-bold">ca. 72 m²</p>
           </div>
           <div className="text-center">
             <p className="text-sm text-gray-500">Zimmer</p>
