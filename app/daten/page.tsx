@@ -1,12 +1,12 @@
 "use client";
 
 const highlights = [
-  "5 Minuten fußläufig zum Klinikum Hellersen",
+  "Ca. 5 Minuten Fußweg (Tür zu Tür) zum Klinikum Hellersen",
   "Ruhige Lage direkt am angrenzenden Waldgebiet",
   "Balkon mit schönem Ausblick",
   "Einbauküche vorhanden",
   "Garage / Stellplatz verfügbar",
-  "Ideal für Klinikpersonal",
+  "Ideal für zeitlich begrenzten Wohnbedarf",
 ];
 
 const features = [
@@ -19,10 +19,10 @@ const features = [
 ];
 
 const locationPoints = [
-  "Fußläufig in ca. 5 Minuten zum Klinikum Hellersen",
+  "Nur ca. 5 Minuten Fußweg (Tür zu Tür) zum Klinikum Hellersen",
   "Ruhige Wohnlage mit Nähe zum Waldgebiet",
-  "Ideal für Klinikpersonal",
-  "Naturnahe Umgebung mit gleichzeitig guter Erreichbarkeit",
+  "Besonders geeignet für Beschäftigte im Klinikum Hellersen",
+  "Ideal für Personen mit zeitlich begrenztem Wohnbedarf",
 ];
 
 function InfoRow({
@@ -89,7 +89,8 @@ export default function DatenPage() {
                 Moderne Etagenwohnung mit Balkon, Einbauküche und zusätzlicher
                 Nutzfläche im Dachgeschoss. Besonders attraktiv ist die ruhige
                 Lage mit direkter Nähe zum Waldgebiet sowie die fußläufige
-                Erreichbarkeit des Klinikums Hellersen in etwa 5 Minuten.
+                Erreichbarkeit des Klinikums Hellersen in nur etwa 5 Minuten –
+                tatsächlich Tür zu Tür bis zum Hauptgebäude.
               </p>
 
               <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-3">
@@ -154,6 +155,7 @@ export default function DatenPage() {
             <InfoRow label="Wohnfläche ca." value="75 qm" strong />
             <InfoRow label="Nutzfläche ca." value="75 qm" strong />
             <InfoRow label="Bezugsfrei ab" value="ab sofort" />
+            <InfoRow label="Mietdauer" value="befristet für ca. 2 Jahre" strong />
             <InfoRow label="Haustiere" value="Nach Vereinbarung" />
             <InfoRow label="Garage / Stellplatz" value="1 Garage" />
           </SectionCard>
@@ -217,6 +219,14 @@ export default function DatenPage() {
                 Die vorhandene Einbauküche, die ruhige Lage und die Nähe zur
                 Natur machen die Wohnung besonders angenehm für alle, die
                 entspannt wohnen und dennoch kurze Wege haben möchten.
+              </p>
+
+              <p>
+                Die Wohnung wird aus beruflichen Gründen befristet für ca. 2
+                Jahre vermietet und im Anschluss selbst genutzt. Sie eignet sich
+                daher besonders für Personen mit zeitlich begrenztem Wohnbedarf
+                – zum Beispiel im Rahmen eines beruflichen Einsatzes, einer
+                Ausbildung oder einer Übergangsphase.
               </p>
             </div>
           </SectionCard>
@@ -296,19 +306,25 @@ export default function DatenPage() {
                   {" "}Klinikum Hellersen
                 </span>
                 . Der Weg dorthin beträgt nur etwa{" "}
-                <span className="font-semibold text-gray-900">5 Minuten</span>.
+                <span className="font-semibold text-gray-900">5 Minuten</span> –
+                und das tatsächlich von Tür zu Tür bis zum Hauptgebäude.
               </p>
 
               <p>
-                Damit eignet sich die Wohnung besonders gut für Klinikpersonal,
-                das kurze Wege schätzt und gleichzeitig ruhig wohnen möchte.
-                Auch die unmittelbare Nähe zum angrenzenden Waldgebiet spricht
-                für eine hohe Wohnqualität.
+                Damit eignet sich die Wohnung besonders gut für Beschäftigte im
+                Umfeld des Klinikums Hellersen, zum Beispiel für
+                Assistenzärzte, PJ-Studierende oder Pflegekräfte, die kurze Wege
+                schätzen und gleichzeitig ruhig wohnen möchten. Auch die
+                unmittelbare Nähe zum angrenzenden Waldgebiet spricht für eine
+                hohe Wohnqualität.
               </p>
 
               <p>
                 Insgesamt verbindet die Lage naturnahes Wohnen, Ruhe und eine
-                sehr praktische Erreichbarkeit wichtiger Ziele im Alltag.
+                sehr praktische Erreichbarkeit wichtiger Ziele im Alltag. Durch
+                die befristete Mietdauer ist die Wohnung zudem besonders
+                interessant für Menschen in einer beruflichen oder privaten
+                Übergangsphase.
               </p>
             </div>
           </SectionCard>

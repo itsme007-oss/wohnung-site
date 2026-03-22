@@ -16,20 +16,20 @@ const items: GalleryItem[] = [
     src: "/wohnung/00_eingang.jpg",
     alt: "Eingang",
     room: "Eingang",
-    title: "Eingang",
+    title: "Eingang Wohnung",
   },
 
   {
     src: "/wohnung/0_balkon_1.jpg",
     alt: "Balkon Ansicht 1",
     room: "Balkon",
-    title: "Balkon 1",
+    title: "Balkon Bild 1",
   },
   {
     src: "/wohnung/0_balkon_2.jpg",
     alt: "Balkon Ansicht 2",
     room: "Balkon",
-    title: "Balkon 2",
+    title: "Balkon Bild 2",
   },
   {
     src: "/wohnung/0_balkon1_blick-tal.jpg",
@@ -54,25 +54,13 @@ const items: GalleryItem[] = [
     src: "/wohnung/1_wz_1.jpg",
     alt: "Wohnzimmer 1",
     room: "Wohnzimmer",
-    title: "Wohnzimmer 1",
-  },
-  {
-    src: "/wohnung/1_wz_2.jpg",
-    alt: "Wohnzimmer 2",
-    room: "Wohnzimmer",
-    title: "Wohnzimmer 2",
-  },
-  {
-    src: "/wohnung/1_wz_3.jpg",
-    alt: "Wohnzimmer 3",
-    room: "Wohnzimmer",
-    title: "Wohnzimmer 3",
+    title: "Wohnzimmer Bild 1",
   },
   {
     src: "/wohnung/1_wz_4.jpg",
-    alt: "Wohnzimmer 4",
+    alt: "Wohnzimmer 2",
     room: "Wohnzimmer",
-    title: "Wohnzimmer 4",
+    title: "Wohnzimmer Bild 2",
   },
 
   {
@@ -86,45 +74,51 @@ const items: GalleryItem[] = [
     src: "/wohnung/3_bad_1.jpg",
     alt: "Bad 1",
     room: "Bad",
-    title: "Bad 1",
+    title: "Bad Bild 1",
   },
   {
     src: "/wohnung/3_bad_2.jpg",
     alt: "Bad 2",
     room: "Bad",
-    title: "Bad 2",
+    title: "Bad Bild 2",
   },
   {
     src: "/wohnung/3_bad_3.jpg",
     alt: "Bad 3",
     room: "Bad",
-    title: "Bad 3",
+    title: "Bad Bild 3",
   },
   {
     src: "/wohnung/3_bad_7.jpg",
     alt: "Bad 4",
     room: "Bad",
-    title: "Bad 4",
+    title: "Bad Bild 4",
   },
 
   {
     src: "/wohnung/4_sz_1.jpg",
     alt: "Schlafzimmer 1",
     room: "Schlafzimmer",
-    title: "Schlafzimmer 1",
+    title: "Schlafzimmer Bild 1",
   },
   {
     src: "/wohnung/4_sz_2.jpg",
     alt: "Schlafzimmer 2",
     room: "Schlafzimmer",
-    title: "Schlafzimmer 2",
+    title: "Schlafzimmer Bild 2",
   },
 
   {
     src: "/wohnung/5_dg_flur.jpg",
-    alt: "Dachgeschoss Flur",
+    alt: "Dachgeschoss Flur 1",
     room: "Dachgeschoss",
-    title: "DG Flur",
+    title: "DG Flur Bild 1",
+  },
+  {
+    src: "/wohnung/5_dg_flur_2.jpg",
+    alt: "Dachgeschoss Flur 2",
+    room: "Dachgeschoss",
+    title: "DG Flur Bild 2",
   },
 
   {
@@ -144,13 +138,13 @@ const items: GalleryItem[] = [
     src: "/wohnung/7_dg_wc_1.jpg",
     alt: "Dachgeschoss WC 1",
     room: "Dachgeschoss",
-    title: "DG WC 1",
+    title: "DG WC Bild 1",
   },
   {
     src: "/wohnung/7_dg_wc_2.jpg",
     alt: "Dachgeschoss WC 2",
     room: "Dachgeschoss",
-    title: "DG WC 2",
+    title: "DG WC Bild 2",
   },
 
   {
@@ -165,127 +159,116 @@ const items: GalleryItem[] = [
     room: "Dachgeschoss",
     title: "DG Raum 2 - Ansicht 2",
   },
-  {
-    src: "/wohnung/8_dg_room2_3.jpg",
-    alt: "Dachgeschoss Raum 2 Ansicht 3",
-    room: "Dachgeschoss",
-    title: "DG Raum 2 - Ansicht 3",
-  },
 
   {
     src: "/wohnung/9_metzler1_1.jpg",
     alt: "Türsprechanlage 1",
     room: "Technik",
-    title: "Türsprechanlage 1",
+    title: "Türsprechanlage Bild 1 ",
   },
   {
     src: "/wohnung/9_metzler1_2.jpg",
     alt: "Türsprechanlage 2",
     room: "Technik",
-    title: "Türsprechanlage 2",
+    title: "Türsprechanlage Bild 2",
   },
   {
     src: "/wohnung/9_metzler1_3.jpg",
     alt: "Türsprechanlage 3",
     room: "Technik",
-    title: "Türsprechanlage 3",
+    title: "Türsprechanlage Bild 3",
   },
   {
     src: "/wohnung/9_metzler1_4.jpg",
     alt: "Türsprechanlage 4",
     room: "Technik",
-    title: "Türsprechanlage 4",
+    title: "Türsprechanlage Bild 4",
   },
   {
     src: "/wohnung/9_metzler1_5.jpg",
     alt: "Türsprechanlage 5",
     room: "Technik",
-    title: "Türsprechanlage 5",
+    title: "Türsprechanlage Bild 5",
   },
 
   {
     src: "/wohnung/10_kueche_1.jpg",
     alt: "Küche 1",
     room: "Küche",
-    title: "Küche 1",
+    title: "Küche Ansicht 1",
   },
   {
     src: "/wohnung/10_kueche_2.jpg",
     alt: "Küche 2",
     room: "Küche",
-    title: "Küche 2",
+    title: "Küche Ansicht 2",
   },
   {
     src: "/wohnung/10_kueche_3.jpg",
     alt: "Küche 3",
     room: "Küche",
-    title: "Küche 3",
-  },
-  {
-    src: "/wohnung/10_kueche_4.jpg",
-    alt: "Küche 4",
-    room: "Küche",
-    title: "Küche 4",
+    title: "Küche Ansicht 3",
   },
   {
     src: "/wohnung/10_kueche_5.jpg",
     alt: "Küche 5",
     room: "Küche",
-    title: "Küche 5",
+    title: "Küche - Kühschrank",
   },
   {
     src: "/wohnung/10_kueche_6.jpg",
     alt: "Küche 6",
     room: "Küche",
-    title: "Küche 6",
+    title: "Küche - Gefrierfach",
   },
   {
     src: "/wohnung/10_kueche_7.jpg",
     alt: "Küche 7",
     room: "Küche",
-    title: "Küche 7",
+    title: "Küche - Backofen & Mikrowelle",
   },
   {
     src: "/wohnung/10_kueche_8.jpg",
     alt: "Küche 8",
     room: "Küche",
-    title: "Küche 8",
+    title: "Küche - Spülmaschiene",
   },
   {
     src: "/wohnung/10_kueche_9.jpg",
     alt: "Küche 9",
     room: "Küche",
-    title: "Küche 9",
+    title: "Küche - ausziehbare Armatur",
   },
   {
     src: "/wohnung/10_kueche_10.jpg",
     alt: "Küche 10",
     room: "Küche",
-    title: "Küche 10",
+    title: "Küche - Induktionskochfeld 90cm ",
   },
   {
     src: "/wohnung/10_kueche_11.jpg",
     alt: "Küche 11",
     room: "Küche",
-    title: "Küche 11",
+    title: "Küche - Abzugshaube",
   },
   {
     src: "/wohnung/10_kueche_12.jpg",
     alt: "Küche 12",
     room: "Küche",
-    title: "Küche 12",
+    title: "Küche - Steckerleiste ,
   },
   {
     src: "/wohnung/10_kueche_13.jpg",
     alt: "Küche 13",
     room: "Küche",
-    title: "Küche 13",
+    title: "Küche - Steckerleiste",
   },
+
   {
-    src: "/wohnung/Rundgang_OG_.mp4",
-    alt: "Rundgang_OG",
-    room: "Eingang",
-    title: "Rundgang OG",
+    src: "/wohnung/Rundgang_OG.mp4",
+    alt: "Rundgang Obergeschoss",
+    room: "Video",
+    title: "Video Rundgang",
     type: "video",
     poster: "/wohnung/Grundriss_OG.png",
   },
@@ -296,23 +279,17 @@ const items: GalleryItem[] = [
     room: "Grundriss",
     title: "Grundriss OG",
   },
-  
-   {
+  {
     src: "/wohnung/Grundriss_DG.png",
     alt: "Grundriss DG",
     room: "Grundriss",
     title: "Grundriss DG",
-  }, 
- 
-  
-  
-  
-  
-  
+  },
 ];
 
 const categories = [
   "Alle",
+  "Video",
   "Eingang",
   "Balkon",
   "Wohnzimmer",
@@ -331,6 +308,9 @@ export default function GaleriePage() {
 
   const filteredItems = useMemo(() => {
     if (activeCategory === "Alle") return items;
+    if (activeCategory === "Video") {
+      return items.filter((item) => item.type === "video");
+    }
     return items.filter((item) => item.room === activeCategory);
   }, [activeCategory]);
 
@@ -428,7 +408,9 @@ export default function GaleriePage() {
                 </div>
 
                 <div className="p-5">
-                  <div className="text-sm text-gray-500 mb-1">{item.room}</div>
+                  <div className="text-sm text-gray-500 mb-1">
+                    {item.type === "video" ? "Video" : item.room}
+                  </div>
                   <div className="text-lg font-semibold">{item.title}</div>
                 </div>
               </button>
@@ -497,7 +479,7 @@ export default function GaleriePage() {
 
               <div className="p-5 bg-white">
                 <div className="text-sm text-gray-500 mb-1">
-                  {selectedItem.room}
+                  {selectedItem.type === "video" ? "Video" : selectedItem.room}
                 </div>
                 <div className="text-xl font-semibold">
                   {selectedItem.title}
