@@ -187,6 +187,18 @@ const roomGroups: RoomGroup[] = [
       },
     ],
   },
+  {
+    id: "dg-wc",
+    label: "DG WC",
+    firstScene: "dg_wc",
+    scenes: [
+      {
+        id: "dg_wc",
+        label: "DG WC",
+        preview: "/360/dg_wc.jpg",
+      },
+    ],
+  },
 ];
 
 const scenes: Record<string, SceneConfig> = {
@@ -256,9 +268,14 @@ const scenes: Record<string, SceneConfig> = {
     panorama: "/360/dg_room2.jpg",
   },
   dg_room2_a: {
-    title: "DG Zimmer - Ansicht 2",
+    title: "DG Zimmer 2 - Ansicht 2",
     type: "equirectangular",
     panorama: "/360/dg_room2_a.jpg",
+  },
+  dg_wc: {
+    title: "DG WC",
+    type: "equirectangular",
+    panorama: "/360/dg_wc.jpg",
   },
 };
 
