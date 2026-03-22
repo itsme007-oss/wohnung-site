@@ -255,7 +255,7 @@ const items: GalleryItem[] = [
     src: "/wohnung/10_kueche_12.jpg",
     alt: "Küche 12",
     room: "Küche",
-    title: "Küche - Steckerleiste ,
+    title: "Küche - Steckerleiste ",
   },
   {
     src: "/wohnung/10_kueche_13.jpg",
