@@ -220,14 +220,6 @@ export default function DatenPage() {
                 Natur machen die Wohnung besonders angenehm für alle, die
                 entspannt wohnen und dennoch kurze Wege haben möchten.
               </p>
-
-              <p>
-                Die Wohnung wird aus beruflichen Gründen befristet für ca. 2
-                Jahre vermietet und im Anschluss selbst genutzt. Sie eignet sich
-                daher besonders für Personen mit zeitlich begrenztem Wohnbedarf
-                – zum Beispiel im Rahmen eines beruflichen Einsatzes, einer
-                Ausbildung oder einer Übergangsphase.
-              </p>
             </div>
           </SectionCard>
 
